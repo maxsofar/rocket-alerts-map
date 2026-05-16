@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>מכ"ם התרעות - מצב פיקוד</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/map.css" />
+</head>
+<body>
+
+<div id="info-panel" class="glass-panel">
+    <h1 id="status-title">מתחבר למערכת...</h1>
+    <div id="city-list">טוען נתונים...</div>
+    <div id="source-badge" class="source-badge">מקור: מאתחל...</div>
+</div>
+
+<div id="controls-panel" class="glass-panel">
+    <button class="test-btn test-btn-alert" onclick="simulateAlert()">🔴 התרעה</button>
+    <button class="test-btn test-btn-hostile" onclick="simulateHostileAircraft()">🛩️ חדירת כלי טיס עוין</button>
+    <button class="test-btn test-btn-incoming" onclick="simulateIncomingWarning()">🟠 התרעה קרובה</button>
+    <button class="test-btn test-btn-allclear" onclick="simulateAllClear()">🟢 הסתיים</button>
+</div>
+
+<div id="map"></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="src/map-app.js"></script>
+</body>
+</html>

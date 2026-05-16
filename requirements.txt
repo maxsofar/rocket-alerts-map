@@ -1,0 +1,4 @@
+# requirements.txt for map project
+# No external Python packages are required; the proxy uses the Python standard library.
+# If you want to pin a Python version, uncomment or modify the line below.
+# python_version>=3.8
